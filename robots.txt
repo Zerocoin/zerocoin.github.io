@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: zero_knowledge
+Disallow: zero_knowledge.html
