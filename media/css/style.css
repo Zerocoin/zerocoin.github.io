@@ -1,1 +1,12 @@
- 
+.twitter-div {
+    border-radius: 4px; /* to mimic the curved edges of the count box */
+    border-right: 1px solid #AAAAAA; /* this is the width and color of the count box border */
+    height: 20px; /* this height works for the medium button */
+    width: 20px; /* precise width to hide the word */
+    overflow: hidden; /* actually hides the word */
+    padding: 0px 0px 0px 0px;
+    margin-top:10px;
+}
+.navbar .btn-navbar{
+margin-right: 0px;
+}

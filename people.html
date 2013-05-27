@@ -13,7 +13,8 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-        <link href="/media/css/bootstrap.css" rel="stylesheet">
+        <link href="/media/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/media/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/media/css/style.css" rel="stylesheet">
     <link href="/media/css/stickyfooter.css" rel="stylesheet">
     <link href="/media/css/nav.css" rel="stylesheet">
@@ -44,15 +45,26 @@
     <div id="wrap"> <!-- Wrap for sticky footer -->
 
             <div class="row-fluid">
-                <div class="span6 offset3">                
+                <div class="span7 offset3">  
+
+                      
                     <div class="navbar">
+<a class="btn btn-navbar collapsed" data-align="left" data-toggle="collapse" data-target="#foobar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+                        
+                    <div class="nav-collapse" id="foobar">
                                                 <ul class="nav">
 <li><a href="index">Home</a></li><li class="active"><a href="people">People</a></li><li><a href="software">software</a></li><li><a href="q_and_a">Q and A</a></li><li><a href="talks_and_press">Paper, Press, etc</a></li></ul>
-                    <div class="pull-right" style="padding: 10px 0px 0px 0px;">
+                    <div class="pull-right twitter-div" >
 <a href="https://twitter.com/zerocoinproject" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @zerocoinproject</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
 
+
+                     </div>
                     </div>
                 </div>
             </div>
@@ -92,10 +104,9 @@
     </div>
     
         
-                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-    <script>window.jQuery || document.write('<script src="/media/js/libs/jquery-1.5.1.min.js.js">\x3C/script>')</script>
-    
-            
+                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>    
+    <script>window.jQuery || document.write('<script src="/media/js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
+                    
         
 
     <!--[if lt IE 7 ]>

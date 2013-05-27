@@ -27,4 +27,11 @@ html, body {
           padding-left: 20px;
           padding-right: 20px;
         }
+       .banner {
+          margin-left: -20px !important;
+          margin-right: -20px  !important;
+          padding-left: 20px !important;
+          padding-right: 20px  !important;
+        }
+
       }
