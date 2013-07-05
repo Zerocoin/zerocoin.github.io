@@ -4,7 +4,7 @@
   <head>
         <meta charset="">
     <title>
-                Zerocoin
+                Contribute | Zerocoin 
         </title>
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,9 +29,18 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/media/images/apple-touch-icon-114x114.png">
         
         
-                  </head>
+            <script>
+  var _gaq = [['_setAccount', 'UA-40085231-1'], ['_trackPageview']];
+  (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+  }(document, 'script'));
+</script>
+      </head>
 
-  <body class=".nojekyll">
+  <body class="contribute">
     
     <div id="wrap"> <!-- Wrap for sticky footer -->
 
@@ -48,7 +57,7 @@
                         
                     <div class="nav-collapse" id="foobar">
                                                 <ul class="nav">
-<li><a href="index">Home</a></li><li><a href="people">People</a></li><li><a href="contribute">Contribute</a></li><li><a href="software">software</a></li><li><a href="q_and_a">Q and A</a></li><li><a href="talks_and_press">Paper, Press, etc</a></li></ul>
+<li><a href="index">Home</a></li><li><a href="people">People</a></li><li class="active"><a href="contribute">Contribute</a></li><li><a href="software">software</a></li><li><a href="q_and_a">Q and A</a></li><li><a href="talks_and_press">Paper, Press, etc</a></li></ul>
                     <div class="pull-right twitter-div" >
 <a href="https://twitter.com/zerocoinproject" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @zerocoinproject</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -73,7 +82,19 @@
                 <div class="span6 offset3">
                             
 
-      <p>foo</p>
+      <p>We need all the help we can get. There are a number of things you can do to contribute to this project.</p>
+<h2 id="contribute-funds">Contribute funds</h2>
+<p>We&rsquo;re currently developing libzerocoin on our own time. If you donate funds we&rsquo;ll put them to good use: any substantial amounts will be used to pay for additional software development and professional code review. Small amounts will be used as bribes (AKA pizza and beer) to get other cryptographers and professionals to check our work.</p>
+<p>NOTE, since donations are done via bitcoin, they are not anonymous (but you knew that already, right?)</p>
+<p><a class="coinbase-button" data-code="3dfb4931a52d3e62e6b82d7848034861" data-button-style="donation_large" href="https://coinbase.com/checkouts/3dfb4931a52d3e62e6b82d7848034861">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script></p>
+<p><a href="https://coinbase.com/checkouts/02c47e7237c845090cf7b616d03acc29" target="_blank">Donate Currency</a></p>
+<h2 id="contribute-testing">Contribute testing</h2>
+<p>As of this release (July 4, 2013) libzerocoin has not been extensively tested or reviewed by outside parties. We&rsquo;re looking for smart people to review the code and run tools (static, dynamic analysis, fuzzing) on the code. We could also use additional unit tests. Submit any errors to the &lsquo;Issues&rsquo; page on github. Feel free to work and submit pull requests.</p>
+<p>Also, general commitments about the friendliness of the API or its correctness (or lack there of) with respect to C++ conventions would also be useful. For example, we don&rsquo;t have default constructors in some places to prevent uninitialized  objects from being created. Is this too much of a pain? Does it break some supper awesome data structure you wanted to use ( sorry, no, arrays don&rsquo;t count).</p>
+<h2 id="contribute-clients">Contribute clients</h2>
+<p>libzerocoin is only a library. To use Zerocoin in practice it must be integrated with a client. See our /Integrating%20with%20Bitcoin%20clients page for more on this. We&rsquo;re looking for example client integrations and of course would be willing to provide pointers. Send us an email and we&rsquo;ll link it.</p>
+<h2 id="contribute-zerocoin-re-implementations">Contribute Zerocoin (re-)implementations</h2>
+<p>If you&rsquo;re interested in implementing Zerocoin in other languages, please do! Send us a note and we&rsquo;ll link your implementation from our website. These implementations are a great way to shake out bugs, not to mention giving people options other than C++.</p>
 
                 </div>
             </div>
