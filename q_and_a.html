@@ -105,9 +105,9 @@ interested in techniques to anonymize Bitcoin.  Zerocoin is the only
 solution to this that offers provable anonymity even if <em>everyone</em> 
 running the network is out to get you.</p>
 <h3 id="can-i-use-it-now">Can I use it now?</h3>
-<p>Unfortunately, no. We plan on releasing prototype code in June. For Zerocoin to 
-be useful, however, it either needs to be integrated
-into Bitcoin, adopted by some other alternative block chain currency, or become an alternative currency itself and get some adoption. This will take time. Follow <a href="https://twitter.com/ZerocoinProject" title="ZerocoinProject">@ZerocoinProject</a> on Twitter and check this site for updates.</p>
+<p>Not yet. We have released a prototype library exposing the zerocoin functionality.
+See <a href="software">software</a>. For Zerocoin to  be useful, however, it either needs to be integrated
+into Bitcoin, adopted by some other alternative block chain currency (far more likely), or become an alternative currency itself and get some adoption. This will take time and other people&rsquo;s involvement. Follow <a href="https://twitter.com/ZerocoinProject" title="ZerocoinProject">@ZerocoinProject</a> on Twitter and check this site for updates.</p>
 <h3 id="whats-this-about-a-backdoor">What&rsquo;s this about a backdoor?</h3>
 <p>There is no backdoor and there never was.  This was a misinterpretation of the following quote in the paper and a less than ideally phrased answer in an interview. </p>
 <blockquote>
@@ -149,15 +149,17 @@ money around, which is step one in laundering money. There are, however,
 promising techniques for preventing money laundering without violating the
 privacy of non-launderers (e.g., <a href="https://www.cs.jhu.edu/~susan/papers/CHL06.pdf" title="Balancing Accountability 
 and Privacy Using E-Cash ">this paper</a>). The basic idea is if you spend more than x amount
-in one transaction (e.g., ten thousand USD), then the transaction is identified.
+in one transaction (e.g., ten thousand USD/BTC/), then the transaction is identified.
 If you spend less than that, you are completely anonymous. This does not depend on
-a trusted party to make the determination, rather it is a property of the cryptographic protocol. 
+a trusted party to make the determination, rather it is a property of the cryptographic protocol. </p>
+<p><strong> Zerocoin does not implement this functionality at all, nor can we force it on people even if we did.</strong> 
 Considerably more work needs to be done to apply these techniques to Bitcoin and Zerocoin
-and to prevent more sophisticated money laundering techniques, but it is a promising
-research topic. Whether anyone wants to adopt this technology is a policy question
+and to prevent more sophisticated money laundering techniques (and even some unsophisticated ones like spending
+money through intermediaries), but it is a promising
+research topic. Whether anyone wants to adopt this kind of technology is a policy question
 (as are what the exact thresholds or patterns that trigger identification). There must be a consensus
-on this to adopt it and put it in the code. Without that consensus, miners would not adopt the code and users would
-not use it. But it is an option. </p>
+on this to adopt it and put it in the code. Without that consensus, it would remain a topic relegated to research papers
+since  miners would not adopt the modified code and users would not use it.</p>
 
                 </div>
             </div>
