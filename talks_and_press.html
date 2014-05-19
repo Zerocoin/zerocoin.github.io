@@ -4,7 +4,7 @@
   <head>
         <meta charset="">
     <title>
-                Zerocoin
+                Zerocoin Project
         </title>
     <meta name="description" content="">
     <meta name="author" content="">
@@ -57,7 +57,7 @@
                         
                     <div class="nav-collapse" id="foobar">
                                                 <ul class="nav">
-<li><a href="index">Home</a></li><li><a href="people">People</a></li><li><a href="contribute">Contribute</a></li><li><a href="software">software</a></li><li><a href="q_and_a">Q and A</a></li><li class="active"><a href="talks_and_press">Paper, Press, etc</a></li></ul>
+<li><a href="index">Home</a></li><li><a href="people">People</a></li><li><a href="q_and_a">Q and A</a></li><li class="active"><a href="talks_and_press">Papers, Press, etc</a></li></ul>
                     <div class="pull-right twitter-div" >
 <a href="https://twitter.com/zerocoinproject" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @zerocoinproject</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -72,7 +72,7 @@
                 <div class="span6 offset3" />
                                         <h1>
                         <a class="brand" href="index.html">
-                            <img src="/media/images/zq_bw_72.png"/>erocoin
+                            <img src="/media/images/zq_bw_72.png"/>erocoin Project
                         </a> 
                     </h1>
                                     </div>
@@ -82,7 +82,17 @@
                 <div class="span6 offset3">
                             
 
-      <h3 id="paper">Paper</h3>
+      <h3 id="zerocash-paper">Zerocash Paper</h3>
+<h4 id="zerocash-decentralized-anonymous-payments-from-bitcoin">Zerocash: Decentralized Anonymous Payments from Bitcoin |</h4>
+<h5 id="eli-ben-sasson-alessandro-chiesa-christina-garman-matthew-green">Eli Ben-Sasson    Alessandro Chiesa Christina Garman Matthew Green</h5>
+<h5 id="ian-miers-eran-tromer-madars-virza">Ian Miers     Eran Tromer Madars Virza</h5>
+<p><a href="http://www.ieee-security.org/TC/SP2014/">IEEE Symposium on Security and Privacy (Oakland) 2014</a>|<a href="http://zerocash-project.org/media/pdf/zerocash-oakland2014.pdf">PDF</a></p>
+<blockquote>
+<p>Bitcoin is the first digital currency to see widespread adoption. While payments are conducted between pseudonyms, Bitcoin cannot offer strong privacy guarantees: payment transactions are recorded in a public decentralized ledger, from which much information can be deduced. Zerocoin(Miers et al., IEEE S&amp;P 2013) tackles some of these privacy issues by unlinking transactions from the payment&rsquo;s origin. Yet, it still reveals payments&rsquo; destinations and amounts, and is limited in functionality.
+In this paper, we construct a full-fledged ledger-based digital currency with strong privacy guarantees. Our results leverage recent advances in zero-knowledge Succinct Non-interactive ARguments of Knowledge (zk-SNARKs).
+  First, we formulate and construct decentralized anonymous payment schemes (DAP schemes). A DAP scheme enables users to directly pay each other privately: the corresponding transaction hides the payment&rsquo;s origin, destination, and transferred amount. We provide formal definitions and proofs of the construction&rsquo;s security.Second, we build Zerocash, a practical instantiation of our DAP scheme construction. In Zerocash, transactions are less than 1 kB and take under 6 ms to verify &mdash; orders of magnitude &gt;more efficient than the less-anonymous Zerocoin and competitive with plain Bitcoin.</p>
+</blockquote>
+<h3 id="zerocoin-paper">Zerocoin Paper</h3>
 <h4 id="zerocoin-anonymous-distributed-e-cash-from-bitcoin">Zerocoin: Anonymous Distributed E-Cash from Bitcoin</h4>
 <h5 id="ian-miers-christina-garman-matthew-green-aviel-d-rubin">Ian Miers, Christina Garman, Matthew Green, Aviel D. Rubin</h5>
 <p><a href="http://www.ieee-security.org/TC/SP2013/">IEEE Symposium on Security and Privacy (Oakland) 2013</a> | <a href="/media/pdf/ZerocoinOakland.pdf">PDF</a>| Abstract:</p>
@@ -101,7 +111,8 @@ Bitcoin. We detail Zerocoin&rsquo;s cryptographic construction, its
 integration into Bitcoin, and examine its performance both in
  terms of computation and impact on the Bitcoin protocol.</p>
 </blockquote>
-<h3 id="press">Press</h3>
+<p>Zerocash Paper </p>
+<h3 id="selected-press">Selected Press</h3>
 <ul>
 <li>
 <p><a href="http://www.americanbanker.com/bankthink/feds-wrongly-demonize-privacy-in-liberty-reserve-case-1059468-1.html?zkPrintable=1&amp;nopagination=1">Feds Wrongly Demonize Privacy in Liberty Reserve Case</a> </p>
@@ -121,23 +132,51 @@ integration into Bitcoin, and examine its performance both in
 </li>
 </ul>
 <h3 id="talks">Talks</h3>
-<h4 id="ian-miers-ieee-symposium-on-security-and-privacy">Ian Miers @ <a href="http://www.ieee-security.org/TC/SP2013/">IEEE Symposium on Security and Privacy</a></h4>
-<p>5.21.2013
+<ul>
+<li>
+<p>May 19, 2013: <em>Universal and affordable computational integrity</em></p>
+<p>Given at <a href="http://www.bitcoin2013.com/">Bitcoin 2013</a> by Eli Ben-Sasson (<a href="https://www.youtube.com/watch?v=YRcPReUpkcU">video</a>).</p>
+<p>The talk covers, at high level, the idea of &ldquo;succinct&rdquo; (short and easy-to-verify) proofs.</p>
+</li>
+<li>
+<p>January 13, 2014: <em>Anonymizing Cryptocurrencies: How to make Bitcoin Anonymous</em></p>
+<p>Given at the <a href="http://realworldcrypto.wordpress.com/">2014 Real-World Cryptography Workshop</a> by Matthew Green (<a href="https://www.youtube.com/watch?v=FXU65XsLiFk">video</a>).</p>
+<p>The talk covers Zerocoin and (an early version of) Zerocash.</p>
+</li>
+<li>
+<p>February 27, 2014: <em>Zerocash: Zerocoin meets SCIPR Lab</em></p>
+<p>Given at the <a href="https://www.youtube.com/channel/UC58YJLWM7hsKUZOQtmAHcvQ">2014 Bitcoin Israel Conference</a> by Eli Ben-Sasson (<a href="https://www.youtube.com/watch?v=l7LSSE0bRRo&amp;feature=youtu.be">video</a>).</p>
+<p>The talk covers the Zerocash construction.</p>
+</li>
+<li>
+<p>March 26, 2014: <em>Zerocash: &#1502;&#1496;&#1489;&#1506; &#1491;&#1497;&#1490;&#1497;&#1496;&#1500;&#1497; &#1502;&#1513;&#1502;&#1512; &#1508;&#1512;&#1496;&#1497;&#1493;&#1514; (Privacy-Preserving Digital Currency)</em></p>
+<p>Given at the 2014 Israel Science Day by Eran Tromer.</p>
+<p>A brief overview of Zerocash, in Hebrew, to the general public.</p>
+</li>
+<li>
+<p>April 22, 2014: <em>Zerocash: Zerocoin meets SCIPR Lab</em></p>
+<p>Given at the <a href="http://www.meetup.com/bitcoin-il/events/175678412/">Israel Bitcoin Foundation</a> by Eli Ben-Sasson (<a href="https://www.youtube.com/watch?v=YXazVMYkE1M&amp;feature=youtu.be">video</a>).</p>
+<p>The talk covers the Zerocash construction.</p>
+</li>
+<li>
+<p>May 20, 2014: <em>Zerocash: Decentralized Anonymous Payments from Bitcoin</em></p>
+<p>To be given at the <a href="http://www.ieee-security.org/TC/SP2014/">2014 IEEE Symposium on Security and Privacy</a>.</p>
+<p>The short talk will cover the Zerocash system at a high level, from a technical perspective.</p>
+</li>
+<li>
+<p>May 21, 2013 Ian Miers @ <a href="http://www.ieee-security.org/TC/SP2013/">IEEE Symposium on Security and Privacy</a>
 Sadly no video as far as we know. Slides <a href="/media/slides/IEEESSP2013/zerocoin_oakland.key">KEYNOTE</a> | <a href="/media/slides/IEEESSP2013/zerocoin_oakland.pdf">PDF</a>| <a href="/media/slides/IEEESSP2013/zerocoin_oakland.ppt">POWERPOINT</a></p>
-<h4 id="ian-miers-bitcoin-2013">Ian Miers @ <a href="http://www.bitcoin2013.com/">Bitcoin 2013</a></h4>
-<p>5.19.2013
-Less technical version of the IEEE talk above. Video available shortly. Slides <a href="/media/slides/bitcoin2013/zerocoin_bitcoin2013.key">KEYNOTE</a> | <a href="/media/slides/bitcoin2013/zerocoin_bitcoin2013.pdf">PDF</a>| <a href="/media/slides/bitcoin2013/zerocoin_bitcoin2013.ppt">POWERPOINT</a></p>
-<h4 id="matthew-green-microsoft-research">Matthew Green @ <a href="http://research.microsoft.com/en-us/">Microsoft Research</a></h4>
-<p>4.24.2013</p>
-<video src="http://msrvideo.vo.msecnd.net/rmcvideos/192058/dl/192058.mp4" poster="/media/slides/msr4.24.2013/video_cover.jpg" controls="" width="320" height="314">
-
-<href src="http://research.microsoft.com/apps/video/dl.aspx?id=192058">
- <img src="/media/slides/msr4.24.2013/video_cover.jpg"/> 
-</a>
-</video>
-
-<p><a href="http://research.microsoft.com/apps/video/dl.aspx?id=192058">See</a> if video is broken.</p>
-<p>Slides <a href="/media/slides/msr4.24.2013/zerocoin_msr.key">KEYNOTE</a>| <a href="/media/slides/msr4.24.2013/zerocoin_msr.pdf">PDF</a> | <a href="/media/slides/msr4.24.2013/zerocoin_msr.ppt">POWERPOINT</a></p>
+</li>
+<li>
+<p>May 19, 2013 Ian Miers @ <a href="http://www.bitcoin2013.com/">Bitcoin 2013</a>
+Less technical version of the IEEE talk above. Slides <a href="/media/slides/bitcoin2013/zerocoin_bitcoin2013.key">KEYNOTE</a> | <a href="/media/slides/bitcoin2013/zerocoin_bitcoin2013.pdf">PDF</a>| <a href="/media/slides/bitcoin2013/zerocoin_bitcoin2013.ppt">POWERPOINT</a></p>
+</li>
+<li>
+<p>May 4, 2013 Matthew Green @ <a href="http://research.microsoft.com/en-us/">Microsoft Research</a>
+<a href="http://research.microsoft.com/apps/video/dl.aspx?id=192058">See</a> for video.
+Slides <a href="/media/slides/msr4.24.2013/zerocoin_msr.key">KEYNOTE</a>| <a href="/media/slides/msr4.24.2013/zerocoin_msr.pdf">PDF</a> | <a href="/media/slides/msr4.24.2013/zerocoin_msr.ppt">POWERPOINT</a></p>
+</li>
+</ul>
 
                 </div>
             </div>

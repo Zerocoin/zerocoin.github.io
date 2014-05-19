@@ -4,7 +4,7 @@
   <head>
         <meta charset="">
     <title>
-                Q & A | Zerocoin 
+                Q & A | Zerocoin Project 
         </title>
     <meta name="description" content="">
     <meta name="author" content="">
@@ -57,7 +57,7 @@
                         
                     <div class="nav-collapse" id="foobar">
                                                 <ul class="nav">
-<li><a href="index">Home</a></li><li><a href="people">People</a></li><li><a href="contribute">Contribute</a></li><li><a href="software">software</a></li><li class="active"><a href="q_and_a">Q and A</a></li><li><a href="talks_and_press">Paper, Press, etc</a></li></ul>
+<li><a href="index">Home</a></li><li><a href="people">People</a></li><li class="active"><a href="q_and_a">Q and A</a></li><li><a href="talks_and_press">Papers, Press, etc</a></li></ul>
                     <div class="pull-right twitter-div" >
 <a href="https://twitter.com/zerocoinproject" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @zerocoinproject</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -72,7 +72,7 @@
                 <div class="span6 offset3" />
                                         <h1>
                         <a class="brand" href="index.html">
-                            <img src="/media/images/zq_bw_72.png"/>erocoin
+                            <img src="/media/images/zq_bw_72.png"/>erocoin Project
                         </a> 
                     </h1>
                                     </div>
@@ -89,7 +89,8 @@
 <li><a href="#can-i-use-it-now">Can I use it now?</a></li>
 <li><a href="#whats-this-about-a-backdoor">What&rsquo;s this about a backdoor?</a></li>
 <li><a href="#could-you-put-a-backdoor-in-it">Could you put a backdoor in it?</a></li>
-<li><a href="#what-about-money-laundering">What about money laundering?</a></li>
+<li><a href="#what-about-criminal-use-of-zerocash">What about criminal use of Zerocash?</a></li>
+<li><a href="#what-about-the-balance-between-accountability-and-privacy">What about the balance between accountability and privacy?</a></li>
 </ul>
 </div>
 <h3 id="why-do-i-care">Why do I care?</h3>
@@ -105,11 +106,10 @@ interested in techniques to anonymize Bitcoin.  Zerocoin is the only
 solution to this that offers provable anonymity even if <em>everyone</em> 
 running the network is out to get you.</p>
 <h3 id="can-i-use-it-now">Can I use it now?</h3>
-<p>Not yet. We have released a prototype library exposing the zerocoin functionality.
-See <a href="software">software</a>. For Zerocoin to  be useful, however, it either needs to be integrated
-into Bitcoin, adopted by some other alternative block chain currency (far more likely), or become an alternative currency itself and get some adoption. This will take time and other people&rsquo;s involvement. Follow <a href="https://twitter.com/ZerocoinProject" title="ZerocoinProject">@ZerocoinProject</a> on Twitter and check this site for updates.</p>
+<p>Not yet. We are planning on releasing an alt-coin using  the Zerocash protocol. 
+We are currently in the process of finishing a release version of the client, based on the Bitcoin 0.9.1 codebase: there&rsquo;s a big difference between research software, and a working release grade client we can stand behind. Our goal is to release this code in a production-quality form that the community can use to stand up a real, functioning currency. We will be providing further updates on this site.</p>
 <h3 id="whats-this-about-a-backdoor">What&rsquo;s this about a backdoor?</h3>
-<p>There is no backdoor and there never was.  This was a misinterpretation of the following quote in the paper and a less than ideally phrased answer in an interview. </p>
+<p>There is no backdoor and there never was.  This was a misinterpretation of the following quote in the original  paper and a less than ideally phrased answer in an interview. </p>
 <blockquote>
 <p>Since all Bitcoin transactions are public, anonymous
 transactions are necessary to avoid tracking by third parties
@@ -130,8 +130,7 @@ about criminals or terrorists. Even if you wanted that world, you&rsquo;d
 need something like Zerocoin to make sure only the &ldquo;good guys&rdquo; could use it.</p>
 <h3 id="could-you-put-a-backdoor-in-it">Could you put a backdoor in it?</h3>
 <p>Not covertly.  The paper has a provably secure protocol in it which is anonymous 
-(technical note: anonymity holds even if the RSA key used in the accumulator is 
-retained, so no that&rsquo;s not a backdoor), so absent modifications there is no way to 
+(technical note: anonymity holds even if the trusted set up is screwed with, so no that&rsquo;s not a backdoor), so absent modifications there is no way to 
 track users. The software will be open source and so any attempt to modify the protocol by inserting a backdoor would be rather obvious.</p>
 <p>As with any protocol (Bitcoin included), the government could mandate an overt 
 locked &ldquo;frontdoor&rdquo; so to speak. On a technical level, these kind of things tend 
@@ -139,27 +138,17 @@ not to <a href="https://en.wikipedia.org/wiki/Clipper_chip#Vulnerability" title=
 Chip">work</a> for decentralized systems.  Moreover, since Zerocoin will be open source 
 any version that had such a frontdoor in it would likely be forked and have it 
 removed. </p>
-<h3 id="what-about-money-laundering">What about money laundering?</h3>
-<p>First, the main problem with money laundering tends to be making the money 
-appear legitimate (after all, they nailed Al Capone for tax fraud), not actually moving 
-it around. Anonymity doesn&rsquo;t help with that since you need to actually identify
-the sources of your income (e.g., for tax purposes) to show it is legitimate.</p>
-<p>However, Bitcoin and Zerocoin obviously make it easier to move 
-money around, which is step one in laundering money. There are, however,
-promising techniques for preventing money laundering without violating the
-privacy of non-launderers (e.g., <a href="https://www.cs.jhu.edu/~susan/papers/CHL06.pdf" title="Balancing Accountability 
-and Privacy Using E-Cash ">this paper</a>). The basic idea is if you spend more than x amount
-in one transaction (e.g., ten thousand USD/BTC/), then the transaction is identified.
-If you spend less than that, you are completely anonymous. This does not depend on
-a trusted party to make the determination, rather it is a property of the cryptographic protocol. </p>
-<p><strong> Zerocoin does not implement this functionality at all, nor can we force it on people even if we did.</strong> 
-Considerably more work needs to be done to apply these techniques to Bitcoin and Zerocoin
-and to prevent more sophisticated money laundering techniques (and even some unsophisticated ones like spending
-money through intermediaries), but it is a promising
-research topic. Whether anyone wants to adopt this kind of technology is a policy question
-(as are what the exact thresholds or patterns that trigger identification). There must be a consensus
-on this to adopt it and put it in the code. Without that consensus, it would remain a topic relegated to research papers
-since  miners would not adopt the modified code and users would not use it.</p>
+<h3 id="what-about-criminal-use-of-zerocash">What about criminal use of Zerocash?</h3>
+<p>Zerocash&rsquo;s privacy guarantees are designed to benefit legitimate users who do not want their financial details made public. There is a concern, as always, that decentralized anonymous payments will facilitate laundering of ill-gotten funds by criminal users. As we now explain, however, Zerocash barely affects the status quo for criminal users, who already have strong incentives to hide their activity, while it provides notable benefits to legitimate users. </p>
+<p>First, the main difficulty with money laundering does not typically lie in how to privately transfer money from one person to another, but in how to make the eventual income appear legitimate: for regulatory purposes, one still has to present credible sources to justify the income, regardless of the technical means by which it was transferred. In this respect, Zerocash does not help.</p>
+<p>Second, even without the &ldquo;help&rdquo; of Zerocash, criminal users can already anonymize their activities via existing financial systems (e.g., by using cash) or Bitcoin (e.g., by using mixes). Thus, the introduction of yet another method to anonymously move money is of little consequence.</p>
+<p>Finally, Bitcoin is increasingly subject to regulation that narrows the gap between it and traditional financial systems. For instance, Bitcoin exchanges are required to identify customers conducting sufficiently-large transfers to/from traditional currencies. Presumably such regulations would apply to Zerocash exchanges as well.</p>
+<h3 id="what-about-the-balance-between-accountability-and-privacy">What about the balance between accountability and privacy?</h3>
+<p>Zerocash extensions can accommodate various choices of balance between accountability and privacy.</p>
+<p>For instance, there are promising techniques for preventing money laundering without violating the
+privacy of legitimate users (e.g., <a href="https://www.cs.jhu.edu/~susan/papers/CHL06.pdf" title="Balancing Accountability and Privacy Using E-Cash ">CHL06</a>). Roughly, the idea is to build the cryptographic protocol so that, once the total amount paid between any two users (over any number of payments) exceeds some public threshold, the payments are not private. Zerocash could incorporate such techniques (though the initial prototype does not do so).</p>
+<p>More generally, the underlying zk-SNARK cryptographic proof machinery is flexible enough to enforce a wide range of policies. It can, for example, let users prove that they paid the taxes due on all transactions, without revealing those transactions, their amounts, or even the amount of taxes paid. As long as the policy can be specified by efficient &ldquo;nondeterministic&rdquo; computation, it can (in principle) be enforced using zk-SNARKs and added to Zerocash. This can help to verify and enforce a wide range of compliance and regulatory policies in manner that is non-invasive to privacy. Morever, once codified, policies will be enforced even in the presence of corrupt employees among the authorities.</p>
+<p>This raises intriguing research, policy, and engineering questions over what policies are desirable and practically realizable.</p>
 
                 </div>
             </div>
